@@ -84,27 +84,32 @@ SET APREIS = 88.90
 WHERE ANR = 12 ;
 
 ### Aufgabe 9
+
 ## Lösung
 ```sql
 ALTER TABLE vertreter
 ADD (bonus NUMBER(4,0));
 ```
 
-###Aufgabe 10
-##Lösung
+### Aufgabe 10
+
+## Lösung
 ```sql
 UPDATE vertreter
 set bonus = 500;
 ```
 
-###Aufgabe 11
-##Lösung
+### Aufgabe 11
+
+## Lösung
 ```sql
 ALTER TABLE vertreter
 MODIFY (VNAME VARCHAR2(20));
 ``` 
-###Aufgabe 12  
-##Lösung
+
+### Aufgabe 12  
+
+## Lösung
 ```sql
 SELECT DISTINCT datum
 FROM verkauf;
