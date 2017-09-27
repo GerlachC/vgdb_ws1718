@@ -23,12 +23,21 @@ Zeige alle Vertreter mit `NAME` und `VNR` an, die eine Provision von  weniger al
 ### Lösung
 ```sql
 Deine Lösung
+SELECT VNR, VNAME
+FROM vertreter
+WHERE provision < 1.07;
 ```
-
 ## Aufgabe 4
 Bei welchen Artikeln (`NAME` und `ARTIKELNUMMER`) liegt der Preis über `100`?
+
+
 
 ### Lösung
 ```sql
 Deine Lösung
+
+SELECT ANAME, ANR
+FROM artikel
+WHERE APREIS > 100;
+
 ```
