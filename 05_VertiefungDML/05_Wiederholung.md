@@ -9,6 +9,7 @@ Führe das SQL-Skript [DB-Vertreter](./SQL_-_DB-Vertreter.sql) in SQLPlus aus, u
 ```sql
 Deine Lösung
 ```
+start
 
 ## Aufgabe 2
 Mache dich mit den Tabellen vertraut bzgl.:
