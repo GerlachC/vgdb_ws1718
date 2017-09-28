@@ -5,7 +5,9 @@ Zeige alle Vertreter mit `NAME` und `VNR` an, deren Name länger als `6` Zeichen
 
 ### Lösung
 ```sql
-Deine Lösung
+SELECT VNAME, VNR
+FROM VERTRETER
+WHERE LENGTH(VNAME) > 6;
 ```
 
 ## Aufgabe 2
@@ -42,7 +44,9 @@ Zeige alle Artikel an, die mit `Wi` beginnen. Löse diese Aufgabe mit der substr
 
 ### Lösung
 ```sql
-Deine Lösung
+SELECT ANAME
+FROM ARTIKEL
+WHERE SUBSTR(ANAME,1,2) = 'Wi';
 ```
 
 ## Aufgabe 5
