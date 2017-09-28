@@ -13,7 +13,10 @@ Zeige alle Vertreter, die im Juli oder im Mai geboren sind.
 
 ### Lösung
 ```sql
-Deine Lösung
+SELECT VNAME, GEBURTSDATUM
+FROM VERTRETER 
+WHERE TO_CHAR(geburtsdatum,'mm') = '05' 
+OR TO_CHAR(geburtsdatum,'mm') = '07' ;
 ```
 
 ## Aufgabe 3
@@ -25,11 +28,13 @@ Erzeuge folgende Ausgabe:
 | 1010 | MUELLER  | ,1        |
 | 3401 | SCHMITZ  | ,1        |
 | 5337 | RITSCH   | ,1        |
-| 4321 | JAHRED   | 0         |
+| 4321 | JAHRED   |  0        |
 
 ### Lösung
 ```sql
-Deine Lösung
+SELECT VNR, VNAME, ROUND(provision,1)
+FROM VERTRETER;
+
 ```
 
 ## Aufgabe 4
@@ -52,7 +57,9 @@ Erzeuge folgende Ausgabe:
 
 ### Lösung
 ```sql
-Deine Lösung
+SELECT VNR, VNAME, TO_CHAR(GEBURTSDATUM, 'mm-yy') dat
+FROM VERTRETER; 
+	
 ```
 
 ## Aufgabe 6
@@ -60,7 +67,10 @@ Zeige alle Vertreter (`VNR`, `VNAME`) an, die im selben Jahr geboren sind wie de
 
 ### Lösung
 ```sql
-Deine Lösung
+SELECT VNR, VNAME
+FROM VERTRETER
+
+
 ```
 
 ## Aufgabe 7
